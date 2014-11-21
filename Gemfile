@@ -36,7 +36,7 @@ gem 'carrierwave'
 gem 'pry'
 gem 'thinking-sphinx', '3.1.0'
 gem "mysql2", "~> 0.3.12b4", :platform=>:ruby
-gem 'flying-sphinx',   '1.2.0'
+gem 'flying-sphinx'
 #gem 'ransack'
 # gem install thinking-sphinx -v "~> 3.1.0"
 # gem install mysql2 -v 0.3.12b5
