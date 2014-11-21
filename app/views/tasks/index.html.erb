@@ -115,9 +115,13 @@
                           <h3 class="main-heading bottom-line line-before"><span class="main-circle-icon"><i class="icon-search"></i></span>  Find Properties</h3>
 
                               <label>Search</label>
-                            <form class="form-search" action="/search" method="GET">
-                              <input type="text" name="query" class="input-medium search-query">
-                              <button type="submit" class="btn">Search</button>
+                        <form class="bottom-line line-before" action="?" method="get">
+                          <%= search_form_for @search do |f| %>
+                              <div class="field">
+                                <%= f.search_field :name_or_description_or_category_cont %>
+                              </div>
+                              <div class="actions"><%= f.submit "Search" %></div>
+                          <% end %>
                             </form>
 
                           <!--Start List Our Agent-->
