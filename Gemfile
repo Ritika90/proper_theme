@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem "pg", "~> 0.16.0", :platform=>:ruby
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -34,9 +34,10 @@ gem 'devise'
 gem 'rails_12factor', group: :production
 gem 'carrierwave'
 gem 'pry'
-#gem 'thinking-sphinx'
-#gem 'mysql2'
-gem 'ransack'
+gem 'thinking-sphinx', '3.1.0'
+gem "mysql2", "~> 0.3.12b4", :platform=>:ruby
+gem 'flying-sphinx',   '1.2.0'
+#gem 'ransack'
 # gem install thinking-sphinx -v "~> 3.1.0"
 # gem install mysql2 -v 0.3.12b5
 # Use unicorn as the app server
