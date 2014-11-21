@@ -1,4 +1,5 @@
 class CreateProperties < ActiveRecord::Migration
+  drop_table :properties
   def change
     create_table :properties do |t|
       t.string :address1

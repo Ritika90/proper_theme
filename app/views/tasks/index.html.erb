@@ -113,22 +113,20 @@
                       <div class="panel">
                           <!--Start Form Search Properties-->
                           <h3 class="main-heading bottom-line line-before"><span class="main-circle-icon"><i class="icon-search"></i></span>  Find Properties</h3>
-                          <form class="bottom-line line-before" action="?" method="get">
+
                               <label>Search</label>
-                              <%= search_form_for @search do |f| %>
-                                <div class="field">
-                                  <%= f.text_field :name_cont %>
-                                </div>
-                                <div class="actions"><%= f.submit "Search" %></div>
-                              <% end %>
-                          </form>
+                            <form class="form-search" action="/search" method="GET">
+                              <input type="text" name="query" class="input-medium search-query">
+                              <button type="submit" class="btn">Search</button>
+                            </form>
+
                           <!--Start List Our Agent-->
                           <h3 class="bottom-line  line-before main-heading"><span class="main-circle-icon"><i class="icon-list"></i></span>  Our Agents</h3>
                           <div class="list-items ">
 
                               <div class="item">
                                   <div class="img-preview">
-                                      <img src="assets/agents/thum_list/a2.jpg" alt="Corin Langpost" />
+                                      <img src="/assets/agents/thum_list/a2.jpg" alt="Corin Langpost" />
                                   </div>
                                   <div class="item-desk">
                                       <div class="title">

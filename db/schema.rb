@@ -11,16 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118061005) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20141120084654) do
 
   create_table "properties", force: true do |t|
     t.string   "address1"
     t.string   "address2"
     t.string   "address3"
-    t.decimal  "amount"
+    t.decimal  "amount",      precision: 10, scale: 0
     t.integer  "bath"
     t.integer  "beds"
     t.boolean  "parking"
@@ -36,7 +33,7 @@ ActiveRecord::Schema.define(version: 20141118061005) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "category"
-    t.decimal  "price"
+    t.decimal  "price",       precision: 10, scale: 0
     t.string   "name"
     t.integer  "postcode"
     t.boolean  "sold"

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'searches/show'
+  resource :search
   resources :properties
   devise_for :users
   root 'tasks#index'
