@@ -34,10 +34,10 @@ gem 'devise'
 gem 'rails_12factor', group: :production
 gem 'carrierwave'
 gem 'pry'
-gem 'thinking-sphinx', '3.1.0'
-gem "mysql2", "~> 0.3.12b4", :platform=>:ruby
-gem 'flying-sphinx'
-#gem 'ransack'
+# gem 'thinking-sphinx', '3.1.0'
+# gem "mysql2", "~> 0.3.12b4", :platform=>:ruby
+# gem 'flying-sphinx'
+gem 'ransack'
 # gem install thinking-sphinx -v "~> 3.1.0"
 # gem install mysql2 -v 0.3.12b5
 # Use unicorn as the app server
